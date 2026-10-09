@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Michael Fares | Portfolio
+
+My personal portfolio website, built to showcase my experience, technical skills, and selected projects as a Full-Stack Software Developer.
+
+The website highlights my professional background, the technologies I work with, and projects I have developed, with a focus on building modern, responsive, and user-friendly web applications.
+
+## Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **UI:** React
+- **Styling:** Tailwind CSS
+- **Components:** shadcn/ui
+
+## Features
+
+- **About Me:** An overview of my background and professional experience.
+- **Experience:** My professional journey and contributions across different roles.
+- **Skills:** Technologies, tools, and frameworks I work with.
+- **Projects:** Selected projects showcasing my development experience.
+- **Responsive Design:** Optimized layouts for desktop, tablet, and mobile devices.
+- **SEO:** Metadata and sitemap configuration to support search engine discoverability.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Make sure you have [Node.js](https://nodejs.org/) and npm installed.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd YOUR_REPOSITORY
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Available Scripts
+
+| Command         | Description                            |
+| --------------- | -------------------------------------- |
+| `npm run dev`   | Starts the development server.         |
+| `npm run build` | Builds the application for production. |
+| `npm run start` | Starts the production server.          |
+| `npm run lint`  | Runs the configured linting checks.    |
+
+## Project Structure
+
+```text
+├── app/          # Application routes and layouts
+├── components/   # Reusable UI components and sections
+├── public/       # Static assets and project images
+├── ...           # Other configuration and source files
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+_Note: The structure above is illustrative. Adjust it to match the actual folders in the repository._
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The portfolio can be deployed on [Vercel](https://vercel.com/), which provides deployment support for Next.js applications.
 
-## Learn More
+For more information, see the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
 
-To learn more about Next.js, take a look at the following resources:
+## Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Michael Fares**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Full-Stack Software Developer
 
-## Deploy on Vercel
+- GitHub: https://github.com/faresmichael96
+- LinkedIn: https://www.linkedin.com/
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with Next.js and TypeScript.
