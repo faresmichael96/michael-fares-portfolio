@@ -29,11 +29,13 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     siteName: `${siteConfig.name} Portfolio`,
     title: `${siteConfig.name} | ${siteConfig.title}`,
+    images: ["/opengraph-image.png"],
     description: siteConfig.description,
   },
   twitter: {
     card: "summary",
     title: `${siteConfig.name} | ${siteConfig.title}`,
+    images: ["/opengraph-image.png"],
     description: siteConfig.description,
   },
 };
