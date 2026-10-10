@@ -7,11 +7,15 @@ import { ArrowUpRight } from "lucide-react";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import Image from "next/image";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
+import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Multi-Tenant Reservation Platform | Michael Fares",
+  title: "Multi-Tenant Reservation Platform",
   description:
-    "A case study of a multi-tenant reservation SaaS, covering product workflows, architecture, tenant isolation, testing, and AI-assisted development.",
+    "A case study of a multi-tenant booking platform for service-based businesses, covering appointment workflows, role-based access, tenant isolation, and testing.",
+  alternates: {
+    canonical: `${siteConfig.url}/projects/reservation-platform`,
+  },
 };
 
 const technologies = ["React", "TypeScript", "Supabase", "shadcn/ui"];

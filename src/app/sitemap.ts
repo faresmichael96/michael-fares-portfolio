@@ -1,12 +1,13 @@
 import type { MetadataRoute } from "next";
-
-const siteUrl = "https://your-domain.com";
+import { siteConfig } from "@/data/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: siteUrl,
-      lastModified: new Date(),
+      url: siteConfig.url,
+    },
+    {
+      url: `${siteConfig.url}/projects/reservation-platform`,
     },
   ];
 }

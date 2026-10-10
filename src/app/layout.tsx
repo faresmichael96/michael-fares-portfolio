@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import { siteConfig } from "@/data/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,9 +18,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Michael Fares | Full-Stack Software Developer",
-  description:
-    "Portfolio of Michael Fares, a Full-Stack Software Developer building modern web applications.",
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: `${siteConfig.name} | ${siteConfig.title}`,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  openGraph: {
+    type: "website",
+    url: siteConfig.url,
+    siteName: `${siteConfig.name} Portfolio`,
+    title: `${siteConfig.name} | ${siteConfig.title}`,
+    description: siteConfig.description,
+  },
+  twitter: {
+    card: "summary",
+    title: `${siteConfig.name} | ${siteConfig.title}`,
+    description: siteConfig.description,
+  },
 };
 
 export default function RootLayout({

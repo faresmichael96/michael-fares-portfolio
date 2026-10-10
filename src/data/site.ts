@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "Full-Stack Software Developer",
   description:
     "I build modern, scalable web applications with React, TypeScript, JavaScript, Python, and Laravel.",
-  url: "",
+  url: "https://michael-fares-portfolio.vercel.app",
   email: "michaelfares50@gmail.com",
   linkedin: "https://www.linkedin.com/in/michael-fares-3ba64a17b/",
   github: "https://github.com/faresmichael96",
