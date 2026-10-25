@@ -45,7 +45,7 @@ export const projects: Project[] = [
       "Supabase",
     ],
     githubUrl: "",
-    liveUrl: "https://marina-nutri-clinic.vercel.app/",
+    liveUrl: "",
     featured: false,
     image: "/images/projects/dietitian/clinical-dietitian.png",
   },

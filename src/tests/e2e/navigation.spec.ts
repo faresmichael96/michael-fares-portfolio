@@ -42,4 +42,13 @@ test.describe("Navigation", () => {
       page.getByRole("button", { name: "Open navigation" }),
     ).toBeVisible();
   });
+
+  test("header navigation works from a 404 page", async ({ page }) => {
+    await page.goto("/this-page-does-not-exist");
+
+    await page.getByRole("link", { name: "Skills" }).click();
+
+    await expect(page).toHaveURL(/\/#skills$/);
+    await expect(page.locator("#skills")).toBeVisible();
+  });
 });
